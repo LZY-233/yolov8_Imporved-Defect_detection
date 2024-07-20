@@ -1,4 +1,4 @@
-# 基于改进YOLOv8算法的工业瑕疵辅助检测系统
+# Industrial defect auxiliary detection system based on improved YOLOv8 algorithm(基于改进YOLOv8算法的工业瑕疵辅助检测系统)
 ## Architecture
 <p align="center">
   <img src="imgs/YOLOV8+GhostConv+Res_CBAM+WIOU.jpg" width="1024" title="details">
@@ -12,4 +12,4 @@
 | YOLOv5l | 640 | 46.17M | 183.5G |  72.23% | 36.74%  |
 | YOLOv7 | 640 | 37.22M | 196.2G |  71.92% | 37.2% |
 | YOLOv8 | 640 | 3.01M | 8.1G |  77.2% | 46.2%  |
-| **Our model** | **640** | **4.05M** | **10.2G** | **0.64** | **79.2%** | **47%** |
+| **Our model** | **640** | **4.05M** | **10.2G** | **79.2%** | **47%** |
