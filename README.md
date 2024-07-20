@@ -1,1 +1,1 @@
-# yolov8_Imporved-Defect_detection
+# 基于改进YOLOv8算法的工业瑕疵辅助检测系统
