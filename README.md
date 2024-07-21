@@ -1,7 +1,7 @@
 # Industrial defect auxiliary detection system based on improved YOLOv8 algorithm(基于改进YOLOv8算法的工业瑕疵辅助检测系统)
 Traditional industrial defect detection mainly relies on manual visual inspection or the use of simple machine vision systems, but these methods have problems such as low efficiency, low accuracy, high labor intensity, and susceptibility to human factors. so I developed a PCB defect auxiliary detection system based on the improved YOLOv8 algorithm. 
 ## Methonds
-The project proposed an improved YOLOv8 algorithm. First, a residual attention mechanism, namely the CBAM attention mechanism ResCBAM with residual connection, was proposed and added to the head of the YOLOv8 model to improve the model's ability to extract features while preventing the model from overfitting. GhostConv was used to replace the ordinary convolution in the backbone to make the model more lightweight while ensuring performance. At the same time, the WIOU loss function was introduced to replace the original CIOU loss function to avoid the problem of small targets having too much influence on the loss function and alleviate the problem of imbalanced data sets. The experimental results show that compared with the original YOLOv8 model, the proposed improved YOLOv8 model has improved Precision, Recall, F1score, and mAP50 by 5.6%, 0.9%, 3.1%, and 1.5% on the public NEU-DET dataset, respectively. The mAP50 is 79.2%, reaching the state-of-the-art (SOTA) level, significantly improving the detection accuracy and efficiency, which is of great significance to ensuring product quality and reducing production costs. The model is also deployed on the WEB side, and users can access the web page to upload pictures or take photos for detection, and can save the results.
+The project proposed an improved YOLOv8 algorithm. First, a residual attention mechanism, namely the CBAM attention mechanism ResCBAM with residual connection, was proposed and added to the head of the YOLOv8 model to improve the model's ability to extract features while preventing the model from overfitting. GhostConv was used to replace the ordinary convolution in the backbone to make the model more lightweight while ensuring performance. At the same time, the WIOU loss function was introduced to replace the original CIOU loss function to avoid the problem of small targets having too much influence on the loss function and alleviate the problem of imbalanced data sets. The experimental results show that compared with the original YOLOv8 model, the proposed improved YOLOv8 model has improved Precision, F1score, and mAP50 by 5.6%, 3.1%, and 1.5% on the public NEU-DET dataset, respectively. The mAP50 is 79.2%, reaching the state-of-the-art (SOTA) level, significantly improving the detection accuracy and efficiency, which is of great significance to ensuring product quality and reducing production costs. The model is also deployed on the WEB side, and users can access the web page to upload pictures or take photos for detection, and can save the results.
 
 Project deployment website: https://huggingface.co/spaces/llzzyy233/
 
@@ -30,7 +30,7 @@ You can download the NEU-DET Dataset on this website https://pan.baidu.com/s/1K-
 
 I had already  divided this dataset into training, validation, and testing set (80-10-10%) 
 
-## model metrics
+## Model metrics
 
 ### PR_Curve
 <p align="center">
@@ -56,14 +56,14 @@ I had already  divided this dataset into training, validation, and testing set (
 * Pytorch >= 1.13.1
 * NVIDIA GPU + CUDA CuDNN 
 
-## quick start
+## Quick start
 ```
   git clone https://github.com/LZY-233/yolov8_Imporved-Defect_detection.git
   cd yolov8_Imporved-Defect_detection
   pip install -r requirements.txt
 ```
 
-### train&&val(yolov8_ResBlock_CBAM_GhostConv)
+### Train&&Val(yolov8_ResBlock_CBAM_GhostConv)
   ```
   python train.py --model ./ultralytics/cfg/models/v8/yolov8_ResBlock_CBAM_GhostConv.yaml --data_dir NEU-DET/data.ymal
   ```
