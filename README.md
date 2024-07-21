@@ -28,15 +28,15 @@ Project deployment website: https://huggingface.co/spaces/llzzyy233/
 ## Dataset
 You can download the NEU-DET Dataset from this website https://pan.baidu.com/s/1K-mTgSJfhFrcVSO8MUqHbQ?pwd=6666 
 
-The dataset had already been divided into training, validation, and testing set (80-10-10%) 
+I had already  divided this dataset into training, validation, and testing set (80-10-10%) 
 
 ## Results
 ### PR_Curve
 <p align="center">
-  <img src="imgs/PR_Curve.png" width="1024" title="details">
+  <img src="imgs/PR_Curve.png" width="1024">
 </p>
 
 ### confusion__matrix_normalized
 <p align="center">
-  <img src="imgs/confusion_matrix_normalized.png" width="1024" title="details">
+  <img src="imgs/confusion_matrix_normalized.png" width="1024">
 </p>
