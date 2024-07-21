@@ -1,0 +1,23 @@
+import argparse
+from ultralytics import YOLO
+
+
+def parse_args():
+    parse = argparse.ArgumentParser(description='Data Postprocess')
+    parse.add_argument('--model', type=str, default=None, help='load the model')
+    parse.add_argument('--data_dir', type=str, default=None, help='the dir to data')
+    args = parse.parse_args()
+    return args
+
+
+def main():
+    args = parse_args()
+    model = YOLO(args.model)
+    model.train(data=args.data_dir, amp=False, batch=4, workers=2)
+
+
+if __name__ == '__main__':
+    main()
+
+# E:\yolo-datasets\PPE.v14i
+# python start_train.py --model ./ultralytics/cfg/models/v8/yolov8_ResBlock_CBAM.yaml --data_dir E:\yolo-datasets\PPE.v14i\data.yaml
