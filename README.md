@@ -25,10 +25,6 @@ Project deployment website: https://huggingface.co/spaces/llzzyy233/
   <img src="imgs/compare.jpg" width="1024" title="details">
 </p>
 
-## Dataset
-You can download the NEU-DET Dataset on this website https://pan.baidu.com/s/1K-mTgSJfhFrcVSO8MUqHbQ?pwd=6666 
-
-I had already  divided this dataset into training, validation, and testing set (80-10-10%) 
 
 ## Model metrics
 
@@ -56,12 +52,28 @@ I had already  divided this dataset into training, validation, and testing set (
 * Pytorch >= 1.13.1
 * NVIDIA GPU + CUDA CuDNN 
 
+
+## Dataset
+You can download the NEU-DET Dataset on this website https://pan.baidu.com/s/1K-mTgSJfhFrcVSO8MUqHbQ?pwd=6666 
+
+I had already  divided this dataset into training, validation, and testing set (80-10-10%)  
+
 ## Quick start
+
 ```
   git clone https://github.com/LZY-233/yolov8_Imporved-Defect_detection.git
   cd yolov8_Imporved-Defect_detection
   pip install -r requirements.txt
 ```
+Then download the dataset ,unzip it and move the relative folder into the project directory as it is represented here below
+
+       yolov8_Imporved-Defect_detection
+          ├── README.md
+          ├── imgs
+          ├── NEU-DET
+          ├── ultralytics
+          ├── train.py
+          ├── requirements.txt
 
 ### Train&&Val(yolov8_ResBlock_CBAM_GhostConv)
   ```
