@@ -10,6 +10,11 @@ Project deployment website: https://huggingface.co/spaces/llzzyy233/Defect_detec
   <img src="imgs/模型结构.jpg" width="1024" title="details"> 
 </p>
 
+### ResCBAM block
+<p align="center">
+  <img src="imgs/ResCBAM.jpg" width="1024"> 
+</p>
+
 ## Table : Comparisons with other detection models on the NEU-DET dataset models
 |     Model     | Test Size |  Param.   |   FLOPs   | mAP<sub>50</sub><sup>val</sup> | mAP<sub>50-95</sub><sup>val</sup> |
 | :-----------: | :-------: | :-------: | :-------: | :----------------------------: | :-------------------------------: |
