@@ -20,20 +20,21 @@ Project deployment website: https://huggingface.co/spaces/llzzyy233/
 |    YOLOv8     |    640    |   3.01M   |   8.1G    |             77.7%              |               46.2%               |
 | **Our model** |  **640**  | **4.05M** | **10.2G** |           **79.2%**            |              **47%**              |
 
-## FIgure: Comparison of accuracy before and after improvement
+## Figure: Comparison of accuracy before and after improvement
 <p align="center">
   <img src="imgs/compare.jpg" width="1024" title="details">
 </p>
 
 ## Dataset
-You can download the NEU-DET Dataset from this website https://pan.baidu.com/s/1K-mTgSJfhFrcVSO8MUqHbQ?pwd=6666 
+You can download the NEU-DET Dataset on this website https://pan.baidu.com/s/1K-mTgSJfhFrcVSO8MUqHbQ?pwd=6666 
 
 I had already  divided this dataset into training, validation, and testing set (80-10-10%) 
 
 ## model metrics
+
 ### PR_Curve
 <p align="center">
-  <img src="imgs/PR_Curve.png" width="1024">
+  <img src="imgs/PR_curve.png" width="1024">
 </p>
 
 ### confusion__matrix_normalized
@@ -43,10 +44,29 @@ I had already  divided this dataset into training, validation, and testing set (
 
 ## Results
 
-<p align="left">
-  <img src="imgs/val_labels.jpg" width="512">
+<p align="center">
+  <img src="imgs/val_labels.jpg" width="400">
+  <img src="imgs/val_pred.jpg" width="400">
+  <p align="center">label(left)-----------------------------------------------------------------pred(right) </p>
 </p>
 
-<p align="Right">
-  <img src="imgs/val_pred.jpg" width="512">
-</p>
+## Requirements
+* Linux (Ubuntu)/Windows
+* Python >= 3.8
+* Pytorch >= 1.13.1
+* NVIDIA GPU + CUDA CuDNN 
+
+## quick start
+```
+  git clone https://github.com/LZY-233/yolov8_Imporved-Defect_detection.git
+  cd yolov8_Imporved-Defect_detection
+  pip install -r requirements.txt
+```
+
+### train&&val(yolov8_ResBlock_CBAM_GhostConv)
+  ```
+  python train.py --model ./ultralytics/cfg/models/v8/yolov8_ResBlock_CBAM_GhostConv.yaml --data_dir NEU-DET/data.ymal
+  ```
+
+## Reference
+https://github.com/ultralytics/ultralytics
