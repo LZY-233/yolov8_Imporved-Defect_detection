@@ -7,7 +7,7 @@ Project deployment website: https://huggingface.co/spaces/llzzyy233/
 
 ## Architecture
 <p align="center">
-  <img src="imgs/YOLOV8+GhostConv+Res_CBAM+WIOU.jpg" width="1024" title="details">
+  <img src="imgs/模型结构.jpg" width="1024" title="details">
 </p>
 
 ## Table : Comparisons with other detection models on the NEU-DET dataset models
