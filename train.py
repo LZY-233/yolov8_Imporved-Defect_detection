@@ -18,6 +18,3 @@ def main():
 
 if __name__ == '__main__':
     main()
-
-# E:\yolo-datasets\PPE.v14i
-# python start_train.py --model ./ultralytics/cfg/models/v8/yolov8_ResBlock_CBAM.yaml --data_dir E:\yolo-datasets\PPE.v14i\data.yaml

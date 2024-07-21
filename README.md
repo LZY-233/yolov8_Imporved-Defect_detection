@@ -11,14 +11,14 @@ Project deployment website: https://huggingface.co/spaces/llzzyy233/
 </p>
 
 ## Table : Comparisons with other detection models on the NEU-DET dataset models
-| Model | Test Size | Param. | FLOPs |  mAP<sub>50</sub><sup>val</sup> | mAP<sub>50-95</sub><sup>val</sup> |
-| :--: | :-: | :-: | :-: | :-: | :-: |
-| YOLOv5s | 640 | 7.04M | 15.9G |  70.87% | 35.02%|
-| YOLOv5m | 640 | 20.89M | 183.5G |  71.74% | 36.67%  |
-| YOLOv5l | 640 | 46.17M | 183.5G |  72.23% | 36.74%  |
-| YOLOv7 | 640 | 37.22M | 196.2G |  71.92% | 37.2% |
-| YOLOv8 | 640 | 3.01M | 8.1G |  77.7% | 46.2%  |
-| **Our model** | **640** | **4.05M** | **10.2G** | **79.2%** | **47%** |
+|     Model     | Test Size |  Param.   |   FLOPs   | mAP<sub>50</sub><sup>val</sup> | mAP<sub>50-95</sub><sup>val</sup> |
+| :-----------: | :-------: | :-------: | :-------: | :----------------------------: | :-------------------------------: |
+|    YOLOv5s    |    640    |   7.04M   |   15.9G   |             70.87%             |              35.02%               |
+|    YOLOv5m    |    640    |  20.89M   |  183.5G   |             71.74%             |              36.67%               |
+|    YOLOv5l    |    640    |  46.17M   |  183.5G   |             72.23%             |              36.74%               |
+|    YOLOv7     |    640    |  37.22M   |  196.2G   |             71.92%             |               37.2%               |
+|    YOLOv8     |    640    |   3.01M   |   8.1G    |             77.7%              |               46.2%               |
+| **Our model** |  **640**  | **4.05M** | **10.2G** |           **79.2%**            |              **47%**              |
 
 ## FIgure: Comparison of accuracy before and after improvement
 <p align="center">
@@ -30,7 +30,7 @@ You can download the NEU-DET Dataset from this website https://pan.baidu.com/s/1
 
 I had already  divided this dataset into training, validation, and testing set (80-10-10%) 
 
-## Results
+## model metrics
 ### PR_Curve
 <p align="center">
   <img src="imgs/PR_Curve.png" width="1024">
@@ -39,4 +39,14 @@ I had already  divided this dataset into training, validation, and testing set (
 ### confusion__matrix_normalized
 <p align="center">
   <img src="imgs/confusion_matrix_normalized.png" width="1024">
+</p>
+
+## Results
+
+<p align="left">
+  <img src="imgs/val_labels.jpg" width="512">
+</p>
+
+<p align="Right">
+  <img src="imgs/val_pred.jpg" width="512">
 </p>
