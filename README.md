@@ -30,6 +30,13 @@ Project deployment website: https://huggingface.co/spaces/llzzyy233/Defect_detec
   <img src="imgs/compare.jpg" width="1024" title="details">
 </p>
 
+## Ablation study 
+|     Model     | Test Size |  Param.   |   FLOPs   | mAP<sub>50</sub><sup>val</sup> |
+| :-----------: | :-------: | :-------: | :-------: | :----------------------------: |
+|    YOLOv8     |    640    |   3.01M   |   8.1G    |             77.7%              |
+|    YOLOv8+GhostConv    |    640    |   2.8M   |   7.8G   |             78.7%             |
+|    YOLOv8+ResCBAM    |    640    |  4.24M   |  10.5G   |             78.2%            |
+| **YOLOv8+ResCBAM+GhostConv(Our)** |  **640**  | **4.05M** | **10.2G** |           **79.2%**            |
 
 ## Model metrics
 
