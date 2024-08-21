@@ -12,7 +12,7 @@ Project deployment website: https://huggingface.co/spaces/llzzyy233/Defect_detec
 
 ### ResCBAM block
 <p align="center">
-  <img src="imgs/ResCBAM.jpg" width="1024"> 
+  <img src="imgs/ResCBAM.jpg" width="512"> 
 </p>
 
 ## Table : Comparisons with other detection models on the NEU-DET dataset models
