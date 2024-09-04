@@ -27,7 +27,7 @@ Project deployment website: https://huggingface.co/spaces/llzzyy233/Defect_detec
 
 ## Figure: Comparison of accuracy before and after improvement
 <p align="center">
-  <img src="imgs/compare.jpg" width="1024" title="details">
+  <img src="imgs/compare.jpg" width="1024" title="compare">
 </p>
 
 ## Ablation study 
@@ -37,6 +37,11 @@ Project deployment website: https://huggingface.co/spaces/llzzyy233/Defect_detec
 |    YOLOv8+GhostConv    |    640    |   2.8M   |   7.8G   |             78.7%             |
 |    YOLOv8+ResCBAM    |    640    |  4.24M   |  10.5G   |             78.2%            |
 | **YOLOv8+ResCBAM+GhostConv(Our)** |  **640**  | **4.05M** | **10.2G** |           **79.2%**            |
+
+## Heatmap
+<p align="center">
+  <img src="imgs/heatmap.png" width="1024" title="heatmap">
+</p>
 
 ## Model metrics
 
